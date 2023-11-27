@@ -1,14 +1,13 @@
 body {
-    background-image: linear-gradient(to right, rgb(184, 0, 55), white);
-    display: flex;
-    text-align: center;
- } 
+  background-image: linear-gradient(to right, rgb(184, 0, 55), white);
+  display: flex;
+  text-align: center;
+}
 
-
- h1{
-    font-family: 'Sedgwick Ave Display', cursive;
-    font-weight: 900;
-    color: black;
-    display: flex;
-    text-align: center;
- }
+h1 {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-weight: 900;
+  color: black;
+  display: flex;
+  text-align: center;
+}
