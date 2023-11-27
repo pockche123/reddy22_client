@@ -55,7 +55,7 @@ getRandQuestion()
 
 
 function getRandQuestion() {
-    fetch("https://reddy-1-1-be.onrender.com/data/choosePhoto")
+    fetch("https://reddy22-server.onrender.com/")
      .then(res => res.json())
      .then(data => fetchInfo(data))
 }
