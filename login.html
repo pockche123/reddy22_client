@@ -6,27 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="" />
     <link rel="stylesheet" href="./static/css/default.css" />
+    <link rel="stylesheet" href="./static/css/login_register.css" />
     <script src="./static/js/login.js" defer></script>
     <title>Login Page</title>
   </head>
   <body>
-    <header>
-      <h1>Login</h1>
-    </header>
-    <hr />
     <main>
-      <form id="login-form">
-        <fieldset>
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" />
-        </fieldset>
-        <fieldset>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" />
-        </fieldset>
-        <input type="submit" value="Log in" />
-      </form>
-      <p>No account? <a href="./register.html">Sign up here</a>.</p>
+      <div class="link-btn_container">
+        <button class="btn-secondary" onclick="location.href='index.html'">
+          <svg
+            fill="none"
+            height="24"
+            shape-rendering="geometricPrecision"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            width="24"
+            style="color: var(--geist-foreground); width: 18px; height: 18px"
+          >
+            <path d="M19 12H5" />
+            <path d="M12 19l-7-7 7-7" />
+          </svg>
+          Homepage
+        </button>
+        <button class="btn-secondary" onclick="location.href='register.html'">
+          Sign up<svg
+            fill="none"
+            height="24"
+            shape-rendering="geometricPrecision"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            width="24"
+            style="color: var(--geist-foreground); width: 18px; height: 18px"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 8v8" />
+            <path d="M8 12h8" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="form-container">
+        <h3>Login to your account</h3>
+        <form id="login-form">
+          <fieldset>
+            <label for="username">Username</label>
+            <input
+              required
+              type="text"
+              id="username"
+              name="username"
+              placeholder="user123"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="password">Password</label>
+            <input
+              required
+              type="password"
+              id="password"
+              name="password"
+              placeholder="**************"
+            />
+          </fieldset>
+          <input class="login-btn" type="submit" value="Log in" />
+        </form>
+      </div>
     </main>
   </body>
 </html>
