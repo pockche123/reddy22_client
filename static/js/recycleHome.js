@@ -12,7 +12,7 @@ function showBins(bins) {
 }
 
 function showBinInfo(bin) {
-  const binCard = document.createElement('div');
+  const binCard = document.createElement('button');
   binCard.classList.add('bin-card');
 
   const title = document.createElement('h2');
@@ -29,8 +29,16 @@ function showBinInfo(bin) {
   description.classList.add('bin-image');
 
   binCard.appendChild(title);
-  binCard.appendChild(description);
+  // binCard.appendChild(description);
   binCard.appendChild(binImage);
+
+  binCard.addEventListener('click', () =>  goToBinPage(bin.bin_id))
   const binsContainer = document.querySelector('.bins-container');
   binsContainer.appendChild(binCard);
+}
+
+
+function goToBinPage(id) {
+  localStorage.setItem("binId", id); 
+  window.location.href = `bin.html?id=${id}`
 }
