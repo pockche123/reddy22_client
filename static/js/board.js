@@ -1,5 +1,6 @@
 const createPostElement = (data) => {
   const post = document.createElement('div');
+  post.classList.add('container');
   post.id = 'post';
 
   const headerContainer = document.createElement('div');
@@ -15,7 +16,9 @@ const createPostElement = (data) => {
 
   const deleteBtn = document.createElement('button');
   deleteBtn.id = 'delete';
-  deleteBtn.textContent = 'Delete';
+  deleteBtn.classList.add('btn-danger');
+  deleteBtn.innerHTML =
+    '<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24" style="color:var(--geist-foreground);width:24px;height:24px"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>';
 
   deleteBtn.addEventListener('click', async () => {
     const options = {
@@ -41,8 +44,17 @@ const createPostElement = (data) => {
   headerContainer.appendChild(deleteBtn);
 
   const content = document.createElement('p');
+  content.id = 'content';
   content.textContent = data['content'];
   post.appendChild(content);
+
+  const date = document.createElement('p');
+  date.id = 'date';
+  date.textContent = moment(data['date']).fromNow();
+  date.style.fontWeight = 'bold';
+  post.appendChild(date);
+
+  console.log(data['date']);
 
   return post;
 };
@@ -95,6 +107,7 @@ const loadPosts = async () => {
     const container = document.getElementById('posts');
 
     posts.forEach((p) => {
+      console.log(p);
       const elem = createPostElement(p);
       container.appendChild(elem);
     });
