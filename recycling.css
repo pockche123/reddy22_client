@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -38,6 +36,10 @@ body {
 
 body.recycling {
   background-color: rgb(182, 255, 194);
+}
+
+h2{
+    text-align: center;
 }
 
 :root {
