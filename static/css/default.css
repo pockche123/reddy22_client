@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600&family=Inter:wght@400;600&display=swap');
+
+* {
+  font-family: 'Inter';
+}
+
 body {
   margin: 40px auto;
   line-height: 1.6;
@@ -9,6 +15,7 @@ body {
 h1,
 h2,
 h3 {
+  font-family: 'Inter Tight';
   line-height: 1.2;
 }
 
@@ -19,10 +26,19 @@ fieldset {
   border: none;
 }
 
+fieldset label {
+  font-size: small;
+  font-weight: bold;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  padding: 0.2rem;
+  padding: 16px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
 }
 
 input[type='text'],
@@ -32,7 +48,6 @@ textarea {
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-family: sans-serif;
 }
 
 input[type='submit'],
@@ -58,14 +73,38 @@ input[type='submit'],
   font-size: smaller;
 }
 
+.btn-danger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background-color: #e00;
+  color: #fff;
+  padding: 6px 6px;
+  border-radius: 10px;
+  font-size: smaller;
+}
+
 input[type='submit'],
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-danger {
   transition: transform 0.2s;
 }
 
 input[type='submit']:hover,
 .btn-primary:hover,
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-danger:hover,
+.container:hover {
   transform: scale(1.05);
+}
+
+.form-container {
+  display: flex;
+  flex-flow: column;
+  padding: 16px;
+  outline: 8px solid #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
 }

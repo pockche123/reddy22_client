@@ -1,0 +1,34 @@
+main {
+  padding: 16px;
+}
+
+#posts h2,
+p {
+  margin: 0;
+}
+
+#posts {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+#post {
+  display: flex;
+  gap: 8px;
+}
+
+#post #content {
+  font-size: smaller;
+  margin-right: 34px;
+}
+
+#post #date {
+  font-size: small;
+}
+
+#post-form {
+  display: flex;
+  flex-flow: column;
+}
