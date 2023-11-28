@@ -9,7 +9,6 @@
 
 .bin-card {
   border: 1px solid black;
-  background-color: springgreen;
   padding: 10px;
   text-align: center;
   transition: 0.3s;
