@@ -76,7 +76,7 @@ function fetchInfo(data) {
   });
 
   backButton.addEventListener('click', () => {
-    location.href = 'index.html';
+    location.href = 'recycleHome.html';
   });
   ///////////////////////////////////////////////////////////////////////////////
   nextQuestionBtnC.addEventListener('click', () => {
@@ -109,3 +109,13 @@ function checkAnswer() {
     nextQuestionBtnI.style.display = 'block';
   }
 }
+
+
+// //////////////////////////
+
+// if (backbutton) {
+//   backButton.addEventListener('click', () => {
+//     console.log("clicked!")
+//     window.location.assign('recycleHome.html')
+//   })
+// }
