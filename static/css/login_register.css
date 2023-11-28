@@ -11,20 +11,6 @@ main {
   margin-bottom: 12px;
 }
 
-.form-container {
-  display: flex;
-  flex-flow: column;
-  padding: 16px;
-  outline: 8px solid #f3f4f6;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-}
-
-label {
-  font-size: smaller;
-  font-weight: bold;
-}
-
 .login-btn,
 .signup-btn {
   margin: 8px 2px;
