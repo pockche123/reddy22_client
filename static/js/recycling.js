@@ -77,7 +77,13 @@ function fetchInfo(data){
     button3.bin = shuffledLables[2].id
     button4.bin = shuffledLables[3].id
 
-    ItemName.textContent = name
+  backButton.addEventListener('click', () => {
+    location.href = 'recycleHome.html';
+  });
+  ///////////////////////////////////////////////////////////////////////////////
+  nextQuestionBtnC.addEventListener('click', () => {
+    location.reload(); // should load up a ranomdly selected question and pass current score onto it
+  });
 
     buttons.forEach(button => {
       button.addEventListener('click', checkAnswer)
@@ -120,3 +126,13 @@ function checkAnswer() {
         nextQuestionBtnI.style.display = 'block'
     }
 }
+
+
+// //////////////////////////
+
+// if (backbutton) {
+//   backButton.addEventListener('click', () => {
+//     console.log("clicked!")
+//     window.location.assign('recycleHome.html')
+//   })
+// }
