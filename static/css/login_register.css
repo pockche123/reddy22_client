@@ -11,6 +11,12 @@ main {
   margin-bottom: 12px;
 }
 
+.form-container_parent {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 .login-btn,
 .signup-btn {
   margin: 8px 2px;
@@ -20,4 +26,8 @@ main {
 #register-form {
   display: flex;
   flex-flow: column;
+}
+
+input[type='submit']:hover {
+  transform: scale(1.02);
 }
