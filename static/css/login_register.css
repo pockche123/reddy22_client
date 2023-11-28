@@ -7,7 +7,8 @@ main {
 
 .link-btn_container {
   display: flex;
-  justify-content: space-between;
+  gap: 340px;
+  justify-content: center;
   margin-bottom: 12px;
 }
 
