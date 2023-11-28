@@ -5,7 +5,7 @@ fetchBins()
 
 
 function fetchBins(){
-    fetch("http://localhost:3000/bins")
+    fetch("https://reddy-2-2-be.onrender.com/bins")
         .then(resp => resp.json())
         .then(data => showBins(data))
         .catch(e => console.log(e))
@@ -26,7 +26,7 @@ function showBinInfo(bin) {
     title.classList.add('title'); 
 
     const description = document.createElement('p');
-    description.textConetnt = bin.info; 
+    description.textContent = bin.info; 
     description.classList.add('description'); 
 
     const binImage = document.createElement('img'); 
@@ -37,7 +37,6 @@ function showBinInfo(bin) {
     binCard.appendChild(title); 
     binCard.appendChild(description); 
     binCard.appendChild(binImage); 
-
-    const binsContainer = document.getElementsByClassName('bins-container');
+    const binsContainer = document.querySelector('.bins-container');
     binsContainer.appendChild(binCard); 
 }
