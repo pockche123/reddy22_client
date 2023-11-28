@@ -32,12 +32,10 @@ const ItemName = document.getElementById('name')
 
 //////////////////////////////////////////////////////////////////////////
 
-
 const nextQuestionBtnC = document.getElementById('create-score');
 const nextQuestionBtnI = document.getElementById('next-btn-incorrect');
 
 //////////////////////////////////////////////////////////////////////////
-
 
 const recycleImg = document.getElementById('image')
 const body = document.getElementById('body')
@@ -50,10 +48,9 @@ const button4 = document.getElementById('btn4')
 const buttons = document.querySelectorAll('.answer')
 
 
-// let score = [0]
+let score = [0]
 
 getRandQuestion()
-
 
 function getRandQuestion() {
     const randNum = Math.floor(Math.random()*25) + 1;
@@ -61,7 +58,6 @@ function getRandQuestion() {
      .then(res => res.json())
      .then(data => fetchInfo(data))
 }
-
 
 function fetchInfo(data){
     recycleImg.src = data.material_image;
@@ -81,12 +77,11 @@ function fetchInfo(data){
     button3.bin = shuffledLables[2].id
     button4.bin = shuffledLables[3].id
 
-
     ItemName.textContent = name
 
     buttons.forEach(button => {
-        button.addEventListener('click', checkAnswer)
-    })
+      button.addEventListener('click', checkAnswer)
+  })
 
     backButton.addEventListener('click', () => {
         location.href = 'index.html'
