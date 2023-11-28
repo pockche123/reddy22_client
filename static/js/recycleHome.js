@@ -1,7 +1,3 @@
-fetchBins();
-
-
-
 
 fetchBins()
 
@@ -10,7 +6,7 @@ function fetchBins(){
     fetch("https://reddy-2-2-be.onrender.com/bins")
         .then(resp => resp.json())
         .then(data => showBins(data))
-        .catch(e => console.log(e)
+        .catch(e => console.log(e))
 }
 
 function showBins(bins) {
