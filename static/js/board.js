@@ -136,4 +136,14 @@ document.getElementById('logout').addEventListener('click', async () => {
   }
 });
 
+let modal = document.getElementById('modal');
+
+document
+  .getElementById('create-btn')
+  .addEventListener('click', () => (modal.style.display = 'block'));
+
+window.onclick = function (e) {
+  if (e.target === modal) modal.style.display = 'none';
+};
+
 loadPosts();
