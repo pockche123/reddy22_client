@@ -1,6 +1,5 @@
 body {
   margin: 40px auto;
-  max-width: 650px;
   line-height: 1.6;
   font-size: 18px;
   color: #444444;
@@ -14,6 +13,9 @@ h3 {
 }
 
 fieldset {
+  padding: 0 0 16px 0;
+  display: flex;
+  flex-flow: column;
   border: none;
 }
 
@@ -21,4 +23,49 @@ fieldset {
   display: flex;
   flex-direction: column;
   padding: 0.2rem;
+}
+
+input[type='text'],
+input[type='password'],
+textarea {
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+
+input[type='submit'],
+.btn-primary {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background-color: #f3f4f6;
+  color: #394150;
+  padding: 6px 6px;
+  border-radius: 14px;
+  font-size: smaller;
+}
+
+input[type='submit'],
+.btn-primary,
+.btn-secondary {
+  transition: transform 0.2s;
+}
+
+input[type='submit']:hover,
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: scale(1.05);
 }
