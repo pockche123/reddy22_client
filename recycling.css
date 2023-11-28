@@ -38,6 +38,9 @@ body.recycling{
     background-color: rgb(182, 255, 194);
 }
 
+h2{
+    text-align: center;
+}
 
 :root {
     --hue-neutral: 120;
