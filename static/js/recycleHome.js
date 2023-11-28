@@ -32,13 +32,12 @@ function showBinInfo(bin) {
   // binCard.appendChild(description);
   binCard.appendChild(binImage);
 
-  binCard.addEventListener('click', () =>  goToBinPage(bin.bin_id))
+  binCard.addEventListener('click', () => goToBinPage(bin.bin_id));
   const binsContainer = document.querySelector('.bins-container');
   binsContainer.appendChild(binCard);
 }
 
-
 function goToBinPage(id) {
-  localStorage.setItem("binId", id); 
-  window.location.href = `bin.html?id=${id}`
+  localStorage.setItem('binId', id);
+  window.location.href = `bin.html?id=${id}`;
 }
