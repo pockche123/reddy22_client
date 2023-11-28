@@ -1,0 +1,66 @@
+
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4%;
+  }
+
+#bin-image{
+    margin-left: 15px;
+
+}
+
+#bin-info{
+    width: 50vw;
+}
+
+#to-put-list , #to-not-put-list{
+    list-style-type: none;
+}
+
+.fa-check{
+    color: green; 
+}
+
+.fa-x{
+    color: red;
+}
+
+
+.postcode{
+    border: 5px solid purple; 
+    padding: 10px; 
+    width: 50vw;
+    border-radius: 10px; 
+}
+
+.postcode-sub{
+    display: flex; 
+    justify-content: space-between;
+
+}
+
+.postcode-sub input, .postcode-sub button{
+   padding: 10px;
+}
+
+
+
+
+#extra-info{
+    background-color: gainsboro; 
+    padding: 10px;
+    padding-bottom:30px; 
+    width: 50vw;
+}
+
+#extra-info a{
+    text-decoration: none; 
+    color: blue; 
+}
+
+#extra-info a:hover{
+    text-decoration: underline;
+    color: #216477; 
+}

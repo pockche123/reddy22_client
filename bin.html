@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./static/js/bin.js"></script>
+    <link rel="stylesheet" href="./static/css/bin.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
-    <h1>Bin Page</h1>
-</body>
+  </head>
+  <body>
+    <header>
+      <i class="fa-solid fa-city"></i>
+      <h1>Florin District Council</h1>
+    </header>
+    <main>
+      <article>
+        <div>
+          <h2>
+            <label id="bin-title"></label>:
+            <label class="bin-color"></label> lidded
+          </h2>
+        </div>
+        <div class="postcode">
+            <h3>Check your collection day</h3>
+            <div class="postcode-sub">
+                <label>or <a href="">Search by street</a></label>
+                <div class="postcode-input">
+                <input type="text" placeholder="Enter your postcode">
+                <button>Go</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info">
+          <p id="bin-info"></p>
+          <img id="bin-image" alt="bin-image" />
+        </div>
+        <section class="bin-input">
+          <h3>
+            What can you put in your <label class="bin-color"></label> lidded
+            bin
+          </h3>
+          <ul id="to-put-list"></ul>
+        </section>
+        <section class="bin-input">
+          <h3>
+            What not to put in your <label class="bin-color"></label> lidded bin
+          </h3>
+          <ul id="to-not-put-list"></ul>
+        </section>
+      </article>
+      <article id="extra-info">
+          <h4>Contact waste and recycling</h4>
+        <a href="">Report a missed bin collection</a><br>
+        <a href="">Order a new waste and recycling bins</a><br>
+        <a href="">Damaged containers</a><br>
+        <a href="">Order a bulky item collection</a><br>
+        <a href="">Waste collection enquiry, compliment or complaint</a><br>
+      </article>
+    </main>
+       <footer>Florin District Council</footer>
+  </body>
 </html>
