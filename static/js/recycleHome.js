@@ -1,12 +1,10 @@
+fetchBins();
 
-fetchBins()
-
-
-function fetchBins(){
-    fetch("https://reddy-2-2-be.onrender.com/bins")
-        .then(resp => resp.json())
-        .then(data => showBins(data))
-        .catch(e => console.log(e))
+function fetchBins() {
+  fetch('https://reddy-2-2-be.onrender.com/bins')
+    .then((resp) => resp.json())
+    .then((data) => showBins(data))
+    .catch((e) => console.log(e));
 }
 
 function showBins(bins) {
@@ -21,22 +19,18 @@ function showBinInfo(bin) {
   title.textContent = bin.bin_type;
   title.classList.add('title');
 
-
-    const description = document.createElement('p');
-    description.textContent = bin.info; 
-    description.classList.add('description'); 
-
+  const description = document.createElement('p');
+  description.textContent = bin.info;
+  description.classList.add('description');
 
   const binImage = document.createElement('img');
   binImage.src = bin.bin_image;
   binImage.alt = bin.bin_type;
   description.classList.add('bin-image');
 
-
-    binCard.appendChild(title); 
-    binCard.appendChild(description); 
-    binCard.appendChild(binImage); 
-    const binsContainer = document.querySelector('.bins-container');
-    binsContainer.appendChild(binCard); 
-
+  binCard.appendChild(title);
+  binCard.appendChild(description);
+  binCard.appendChild(binImage);
+  const binsContainer = document.querySelector('.bins-container');
+  binsContainer.appendChild(binCard);
 }
