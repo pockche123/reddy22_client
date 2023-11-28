@@ -25,6 +25,11 @@ img {
   max-height: 50vh;
 }
 
+#Img1 {
+  max-width:30px;
+  max-height:30px;
+}
+
 body {
   --hue: var(--hue-neutral);
   padding: 0;
