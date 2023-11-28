@@ -38,6 +38,8 @@ function showBinInfo(bin) {
 }
 
 function goToBinPage(id) {
-  localStorage.setItem('binId', id);
-  window.location.href = `bin.html?id=${id}`;
+
+  window.location.href = `bin.html?id=${id}`
 }
+
+
