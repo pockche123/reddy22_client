@@ -28,7 +28,7 @@
 
 const questionContainerElement = document.getElementById('question-container');
 const backButton = document.getElementById('back-btn');
-const ItemName = document.getElementById('name');
+const ItemName = document.getElementById('itemName');
 
 //////////////////////////////////////////////////////////////////////////
 
@@ -80,6 +80,8 @@ function fetchInfo(data) {
   button2.bin = shuffledLables[1].id;
   button3.bin = shuffledLables[2].id;
   button4.bin = shuffledLables[3].id;
+
+  ItemName.textContent = name
 
   backButton.addEventListener('click', () => {
     location.href = 'recycleHome.html';
