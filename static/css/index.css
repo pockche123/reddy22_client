@@ -1,12 +1,8 @@
-
-
-
-
 body {
   background-image: linear-gradient(to right, rgb(184, 0, 55), white);
   display: flex;
   text-align: center;
-  padding: 0; 
+  padding: 0;
   margin: 0;
 }
 
