@@ -15,6 +15,7 @@ body {
 h1,
 h2,
 h3 {
+  color: black;
   font-family: 'Inter Tight';
   line-height: 1.2;
 }
@@ -27,6 +28,7 @@ fieldset {
 }
 
 fieldset label {
+  color: black;
   font-size: small;
   font-weight: bold;
 }
@@ -36,7 +38,7 @@ input[type='password'],
 textarea {
   padding: 8px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 4px;
 }
 
@@ -95,8 +97,7 @@ input[type='submit']:hover,
   width: 500px;
   padding: 16px;
   background-color: #fff;
-  outline: 8px solid #f3f4f6;
-  border: 1px solid #e5e7eb;
+  outline: 4px solid black;
   border-radius: 8px;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
