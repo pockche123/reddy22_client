@@ -124,6 +124,7 @@ input[type='submit']:hover {
 #delete{
   background-color: #de4b43;
 }
+
 h2{
   color: white;
 }
@@ -137,4 +138,12 @@ h2{
 .container:hover {
   cursor: pointer;
   border-color: #de4b43;
+}
+
+.form-container{
+  background-color:#98c4d1 ;
+}
+
+.form-container .submit {
+  background-color: #2f375b;
 }
