@@ -67,9 +67,6 @@ function getRandQuestion() {
     .then((res) => res.json())
     .then((data) => fetchInfo(data));
 
-}
-
-
 async function fetchBins() {
 
   const response = await fetch('https://reddy-2-2-be.onrender.com/bins')

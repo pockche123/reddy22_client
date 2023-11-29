@@ -15,6 +15,7 @@ body {
 h1,
 h2,
 h3 {
+  color: black;
   font-family: 'Inter Tight';
   line-height: 1.2;
 }
@@ -27,18 +28,9 @@ fieldset {
 }
 
 fieldset label {
+  color: black;
   font-size: small;
   font-weight: bold;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  background-color: #f3f4f6;
-  border-radius: 10px;
-  transition: transform 0.2s;
-  cursor: pointer;
 }
 
 input[type='text'],
@@ -46,7 +38,7 @@ input[type='password'],
 textarea {
   padding: 8px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 4px;
 }
 
@@ -95,8 +87,7 @@ input[type='submit'],
 input[type='submit']:hover,
 .btn-primary:hover,
 .btn-secondary:hover,
-.btn-danger:hover,
-.container:hover {
+.btn-danger:hover {
   transform: scale(1.05);
 }
 
@@ -106,34 +97,10 @@ input[type='submit']:hover,
   width: 500px;
   padding: 16px;
   background-color: #fff;
-  outline: 8px solid #f3f4f6;
-  border: 1px solid #e5e7eb;
+  outline: 4px solid black;
   border-radius: 8px;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
 }
