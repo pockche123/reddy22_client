@@ -18,9 +18,20 @@ main {
   align-items: center;
 }
 
+.form-container {
+  background-color: #98c4d1;
+  color: white;
+}
+
 .login-btn,
 .signup-btn {
   margin: 8px 2px;
+  background-color: #2f375b !important;
+}
+
+.btn-secondary{
+  background-color: #fec240 ;
+  border: 3px solid rgb(0, 0, 0);
 }
 
 #login-form,
@@ -32,3 +43,10 @@ main {
 input[type='submit']:hover {
   transform: scale(1.02);
 }
+
+.btn-secondary:hover {
+  cursor: pointer;
+  border-color: #de4b43;
+}
+
+
