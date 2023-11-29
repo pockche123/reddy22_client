@@ -34,7 +34,6 @@ main {
   border: 3px solid rgb(0, 0, 0);
 }
 
-
 #login-form,
 #register-form {
   display: flex;
@@ -43,6 +42,11 @@ main {
 
 input[type='submit']:hover {
   transform: scale(1.02);
+}
+
+.btn-secondary:hover {
+  cursor: pointer;
   border-color: #de4b43;
 }
+
 
