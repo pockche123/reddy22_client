@@ -1,11 +1,11 @@
-fetchBins();
 
-function fetchBins() {
-  fetch('https://reddy-2-2-be.onrender.com/bins')
-    .then((resp) => resp.json())
-    .then((data) => showBins(data))
-    .catch((e) => console.log(e));
+async function fetchBins() {
+const response =  await fetch('https://reddy-2-2-be.onrender.com/bins')
+  const bins = await response.json()
+  showBins(bins)
 }
+document.addEventListener('DOMContentLoaded', fetchBins)
+//  fetchBins()
 
 function showBins(bins) {
   bins.forEach((bin) => showBinInfo(bin));
@@ -38,8 +38,10 @@ function showBinInfo(bin) {
 }
 
 function goToBinPage(id) {
-
   window.location.href = `bin.html?id=${id}`
 }
 
 
+
+
+module.exports={fetchBins}
