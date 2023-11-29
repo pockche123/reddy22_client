@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1701252913691" clover="3.2.0">
-  <project timestamp="1701252913692" name="All files">
+<coverage generated="1701253146377" clover="3.2.0">
+  <project timestamp="1701253146378" name="All files">
     <metrics statements="68" coveredstatements="59" conditionals="0" coveredconditionals="0" methods="25" coveredmethods="20" elements="93" coveredelements="79" complexity="0" loc="68" ncloc="68" packages="1" files="2" classes="2"/>
     <file name="bin.js" path="C:\Users\bayin\Documents\LFA\group projects\reddy_22\reddy22_client\static\js\bin.js">
       <metrics statements="44" coveredstatements="36" conditionals="0" coveredconditionals="0" methods="19" coveredmethods="16"/>
