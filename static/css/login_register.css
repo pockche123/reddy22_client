@@ -29,8 +29,8 @@ main {
   background-color: #2f375b !important;
 }
 
-.btn-secondary{
-  background-color: #fec240 ;
+.btn-secondary {
+  background-color: #fec240;
   border: 3px solid rgb(0, 0, 0);
 }
 
@@ -48,5 +48,3 @@ input[type='submit']:hover {
   cursor: pointer;
   border-color: #de4b43;
 }
-
-
