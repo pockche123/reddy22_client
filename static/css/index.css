@@ -1,21 +1,68 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
   background-image: linear-gradient(to right, rgb(255, 113, 156), white);
-  display: flex;
-  text-align: center;
-  padding: 0; 
+  padding: 0;
   margin: 0;
-  font-family: 'Nova Square', sans-serif;
+  /* font-family: 'Nova Square', sans-serif; */
 }
 
-nav{
+/* nav {
+  display: flex;
   background-image: linear-gradient(to right, rgb(163, 116, 30), white);
-  height: 15vh;
   margin-bottom: 7vh;
   font-size: 30px;
-  font-family: 'Nova Square', sans-serif;
+} */
+
+nav {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, rgb(163, 116, 30), white);
+  padding: 48px 16px 0 16px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  margin-bottom: auto;
+  display: flex;
+  align-items: baseline;
+  gap: 23px;
+}
+
+.logo h1 {
+  font-weight: bold;
+}
+
+.logo h1 a {
+  font-family: 'Inter Tight';
+  text-decoration: none;
+  color: black;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+  gap: 24px;
+  margin: 0;
+  list-style: none;
+}
+
+.links li a {
+  font-family: 'Inter Tight';
+  font-weight: bold;
+  font-size: large;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 16px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 #title {
@@ -23,74 +70,70 @@ nav{
 }
 
 #logoImg {
-  max-width:50px;
-  max-height:50px;
+  max-width: 50px;
+  max-height: 50px;
 }
-
-
-/* .container{
-  margin-left: 10px;
-} */
-
-.col{
+.col {
   /* width: 30vw; */
   margin: 2%;
-  border: 5px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   font-family: 'Nova Square', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.2s;
 }
 
-#col1{
+#col1 {
   background-image: linear-gradient(to right, rgb(245, 30, 30), white);
   height: 10vh;
-  
 }
 
-#col2{
+#col2 {
   background-image: linear-gradient(to right, rgb(250, 182, 57), white);
   height: 10vh;
 }
 
-#col3{
+#col3 {
   background-image: linear-gradient(to right, rgb(206, 78, 27), white);
   height: 10vh;
-
 }
 
-#col4{
-  background-color: rgb(130, 207, 130) ;
+#col4 {
+  background-color: rgb(130, 207, 130);
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/44/Recycle001.svg);
   background-size: 15vh;
   background-position: center;
   height: 60vh;
 }
 
-#col5{
-  background-color: rgb(130, 207, 130) ;
+#col5 {
+  background-color: rgb(130, 207, 130);
   background-image: url(https://streamline.imgix.net/99ed39a0-e6c6-4e39-a910-b75f7c073e6c/f975a920-40b3-463d-b149-8164acc484fb/32094156_l.jpg?ixlib=rb-1.1.0&w=2000&h=2000&fit=max&or=0&s=7de2e431f4d95cb33f4a882e79e9ef39);
-  background-size:50vh;
+  background-size: 50vh;
   background-position: center;
   height: 60vh;
 }
 
-#col6{
-  background-color: rgb(130, 207, 130) ;
+#col6 {
+  background-color: rgb(130, 207, 130);
   background-image: url(https://www.publichealthdegrees.org/wp-content/uploads/sites/53/2021/09/How-to-Contribute-to-Community-Health-Efforts-Through-Mutual-Aid_hero-7.jpeg);
   background-size: 50vh;
   background-position: center;
   height: 60vh;
 }
 
-.homeLink{
+.homeLink {
   text-decoration: none;
   color: black;
 }
 
-.col:hover{
-  cursor: pointer;
-  transform: translate(-10px, -10px) ;
+.homeLink h1 {
+  font-weight: bold;
 }
 
+.col:hover {
+  cursor: pointer;
+  transform: translate(-10px, -10px);
+}
