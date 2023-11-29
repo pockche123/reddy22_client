@@ -30,7 +30,6 @@ img {
 }
 
 body {
-  --hue: var(--hue-neutral);
   padding: 0;
   margin: 0;
   display: flex;
@@ -41,7 +40,7 @@ body {
 }
 
 body.recycling {
-  background-color: rgb(182, 255, 194);
+  background-color: #98c4d1;
 }
 
 h2 {
@@ -67,7 +66,8 @@ h2 {
 }
 
 .rec {
-  background-color: rgb(11, 172, 83);
+  background-color: #2f375b;
+  color: white;
 }
 
 .controls {
@@ -150,6 +150,33 @@ button:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
     width: 300px;
     height:  200px;
-
 }
 
+.answer{
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.back-btn{
+  background-color: #fec240;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.next-btn{
+  background-color: #fec240;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.btn:hover {
+  cursor: pointer;
+  border-color: #de4b43;
+}
+
+#replay{
+  background-color: #fec240;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+#replay:hover {
+  cursor: pointer;
+  border-color: #de4b43;
+}
