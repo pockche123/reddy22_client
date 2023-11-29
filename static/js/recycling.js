@@ -69,6 +69,8 @@ function fetchInfo(data) {
     { name: 'Green', id: 2 },
     { name: 'Brown', id: 2 }
   ];
+
+  
   shuffledLables = lables.sort(() => Math.random() - 0.5);
 
   button1.textContent = shuffledLables[0].name;
