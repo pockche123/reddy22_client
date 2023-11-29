@@ -6,6 +6,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: rgb(0, 0, 0);
 }
 
 .container {
@@ -97,4 +98,43 @@ input[type='submit']:hover {
 .form-container {
   position: relative;
   margin: auto;
+}
+
+.btn-secondary{
+  background-color: #fec240 ;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.btn-primary{
+  background-color: #98c4d1;
+  color: black;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.btn-secondary:hover {
+  cursor: pointer;
+  border-color: #de4b43;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  border-color: #de4b43;
+}
+
+#delete{
+  background-color: #de4b43;
+}
+h2{
+  color: white;
+}
+
+.container{
+  background-color: #2f375b;
+  color: white;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.container:hover {
+  cursor: pointer;
+  border-color: #de4b43;
 }
