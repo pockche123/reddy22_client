@@ -2,20 +2,66 @@
 
 body {
   background-image: linear-gradient(white);
-  display: flex;
-  /* text-align: center; */
   padding: 0; 
   margin: 0;
-  font-family: 'Nova Square', sans-serif;
 }
 
-nav{
-  /* background-image: linear-gradient(to bottom, #2F375B, white); */
+/* nav{
   background-color: #98C4D1;
   height: 15vh;
   margin-bottom: 7vh;
   font-size: 30px;
-  font-family: 'Nova Square', sans-serif;
+}  */
+
+nav {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: #98C4D1;
+  padding: 48px 16px 0 16px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  margin-bottom: auto;
+  display: flex;
+  align-items: baseline;
+  gap: 23px;
+}
+
+.logo h1 {
+  font-weight: bold;
+}
+
+.logo h1 a {
+  font-family: 'Inter Tight';
+  text-decoration: none;
+  color: black;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+  gap: 24px;
+  margin: 0;
+  list-style: none;
+}
+
+.links li a {
+  font-family: 'Inter Tight';
+  font-weight: bold;
+  font-size: large;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 16px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 #title {
@@ -23,8 +69,8 @@ nav{
 }
 
 #logoImg {
-  max-width:50px;
-  max-height:50px;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .col{
@@ -35,12 +81,12 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.2s;
 }
 
 #col1{
   background-color: #FEC240;
   height: 10vh;
-  
 }
 
 #col2{
@@ -51,12 +97,10 @@ nav{
 #col3{
   background-color: #FEC240;
   height: 10vh;
-
 }
 
 #col4{
   background-color: #2F375B;
-  /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/44/Recycle001.svg); */
   background-size: 15vh;
   background-position: center;
   height: 60vh;
@@ -64,7 +108,6 @@ nav{
 
 #col5{
   background-color: #2F375B;
-  /* background-image: url(https://streamline.imgix.net/99ed39a0-e6c6-4e39-a910-b75f7c073e6c/f975a920-40b3-463d-b149-8164acc484fb/32094156_l.jpg?ixlib=rb-1.1.0&w=2000&h=2000&fit=max&or=0&s=7de2e431f4d95cb33f4a882e79e9ef39); */
   background-size:50vh;
   background-position: center;
   height: 60vh;
@@ -72,15 +115,17 @@ nav{
 
 #col6{
   background-color: #2F375B;
-  /* background-image: url(https://www.publichealthdegrees.org/wp-content/uploads/sites/53/2021/09/How-to-Contribute-to-Community-Health-Efforts-Through-Mutual-Aid_hero-7.jpeg); */
   background-size: 50vh;
   background-position: center;
   height: 60vh;
 }
 
-.homeLink{
+.homeLink {
   text-decoration: none;
   color: black;
+}
+.homeLink h1 {
+  font-weight: bold;
 }
 
 .col:hover{
