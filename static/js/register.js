@@ -13,7 +13,9 @@ document
       },
       body: JSON.stringify({
         username: form.get('username'),
-        password: form.get('password')
+        password: form.get('password'),
+        isAdmin: false,
+        isCouncilMember: false
       })
     };
 
