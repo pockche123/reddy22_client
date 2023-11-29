@@ -66,8 +66,8 @@ function fetchInfo(data) {
   const lables = [
     { name: 'Blue', id: 1 },
     { name: 'Grey', id: 2 },
-    { name: 'Green', id: 2 },
-    { name: 'Brown', id: 2 }
+    { name: 'Green', id: 3 },
+    { name: 'Brown', id: 4 }
   ];
   shuffledLables = lables.sort(() => Math.random() - 0.5);
 
