@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cats</title>
     <script defer src="./bundle.js"></script>
-    <link rel="stylesheet" href="./static/css/style.css">
-</head>
-<body>
-      <div class="container">
-        <h1>CATS</h1>
-          <section class="logout">
-            <button id="logout">logout</button>
-          </section>
-          <form id="cat-form">
-            <h4>Enter cat details</h4>
-            <fieldset>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter name here">
-            </fieldset>
-                   <fieldset>
-                <label for="type">Type:</label>
-                <input type="text" id="type" name="type" placeholder="Enter cat type here">
-            </fieldset>
-            <fieldset>
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" placeholder="Enter description here" rows="4" cols="100"></textarea>
-            </fieldset>
-                <fieldset>
-                <label for="habitat">Habitat:</label>
-                <textarea type="text" id="habitat" name="habitat" placeholder="Enter a habitat" rows="2" cols="100"></textarea>
-            </fieldset>
-              <input type="submit" value="Add a cat">
-        </form>
-        <section>
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CATS</h1>
+      <section class="logout">
+        <button id="logout">logout</button>
+      </section>
+      <form id="cat-form">
+        <h4>Enter cat details</h4>
+        <fieldset>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter name here"
+          />
+        </fieldset>
+        <fieldset>
+          <label for="type">Type:</label>
+          <input
+            type="text"
+            id="type"
+            name="type"
+            placeholder="Enter cat type here"
+          />
+        </fieldset>
+        <fieldset>
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Enter description here"
+            rows="4"
+            cols="100"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <label for="habitat">Habitat:</label>
+          <textarea
+            type="text"
+            id="habitat"
+            name="habitat"
+            placeholder="Enter a habitat"
+            rows="2"
+            cols="100"
+          ></textarea>
+        </fieldset>
+        <input type="submit" value="Add a cat" />
+      </form>
+      <section>
         <button id="show-cats">Show cats</button>
-        <ul id="all-cats">
-
-        </ul>
-        </section>
-      
+        <ul id="all-cats"></ul>
+      </section>
     </div>
-</body>
+  </body>
 </html>
