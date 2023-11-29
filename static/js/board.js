@@ -3,6 +3,25 @@ const createPostElement = (data) => {
   post.classList.add('container');
   post.id = 'post';
 
+  const userContainer = document.createElement('div');
+  userContainer.style.display = 'flex';
+  userContainer.style.gap = '12px';
+  userContainer.className = 'user';
+  post.appendChild(userContainer);
+
+  const userIcon = document.createElement('div');
+  userIcon.id = 'icon';
+  userIcon.innerHTML =
+    '<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24" style="color:var(--geist-foreground);width:24px;height:24px"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+  userContainer.appendChild(userIcon);
+
+  const userName = document.createElement('p');
+  userName.id = 'name';
+  userName.style.fontWeight = 'bold';
+  userName.style.fontFamily = 'Inter Tight';
+  fetchUsername(data['user_id']).then((name) => (userName.textContent = name));
+  userContainer.appendChild(userName);
+
   const headerContainer = document.createElement('div');
   headerContainer.style.display = 'flex';
   headerContainer.style.justifyContent = 'space-between';
@@ -53,8 +72,6 @@ const createPostElement = (data) => {
   date.textContent = moment(data['date']).fromNow();
   date.style.fontWeight = 'bold';
   post.appendChild(date);
-
-  console.log(data['date']);
 
   return post;
 };
@@ -107,7 +124,6 @@ const loadPosts = async () => {
     const container = document.getElementById('posts');
 
     posts.forEach((p) => {
-      console.log(p);
       const elem = createPostElement(p);
       container.appendChild(elem);
     });
@@ -122,19 +138,34 @@ document.getElementById('logout').addEventListener('click', async () => {
       Authorization: localStorage.getItem('token')
     }
   };
+
   const response = await fetch(
     'https://reddy-2-2-be.onrender.com/users/logout',
     options
   );
   const data = await response.json();
 
-  if (response.status === 200) {
+  if (response.status == 200) {
     localStorage.removeItem('token');
     window.location.assign('./index.html');
   } else {
     alert(data.error);
   }
 });
+
+async function fetchUsername(user_id) {
+  const response = await fetch(
+    `https://reddy-2-2-be.onrender.com/users/${user_id}`
+  );
+
+  const data = await response.json();
+
+  if (response.status === 200) {
+    return data['username'];
+  } else {
+    alert(data.error);
+  }
+}
 
 let modal = document.getElementById('modal');
 
