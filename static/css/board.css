@@ -8,6 +8,43 @@ main {
   align-items: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 #posts h2,
 p {
   margin: 0;
