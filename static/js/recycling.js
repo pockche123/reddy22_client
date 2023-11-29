@@ -62,10 +62,12 @@ function getRandQuestion() {
     button.disabled = false;
   });
 
+
   const randNum = Math.floor(Math.random() * 25) + 1;
   fetch(`https://reddy-2-2-be.onrender.com/materials/${randNum}`)
     .then((res) => res.json())
     .then((data) => fetchInfo(data));
+}
 
 async function fetchBins() {
 
