@@ -48,6 +48,8 @@ describe('recycleHome.html', () => {
         expect(fetch).toHaveBeenCalledWith('https://reddy-2-2-be.onrender.com/bins');
     });
 
+
+
     
 
 
