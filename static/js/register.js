@@ -28,6 +28,9 @@ document
     if (response.status === 201) {
       window.location.assign('login.html');
     } else {
-      alert(data.error);
+      Swal.fire({
+        icon: 'error',
+        text: data.error
+      });
     }
   });
