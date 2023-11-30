@@ -1,4 +1,52 @@
-
+body {
+    background-image: linear-gradient(white);
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: #98c4d1;
+    padding: 48px 16px 0 16px;
+    margin-bottom: 24px;
+  }
+  
+  .logo {
+    margin-bottom: auto;
+    display: flex;
+    align-items: baseline;
+    gap: 23px;
+  }
+  
+  .logo h1 {
+    font-weight: bold;
+  }
+  
+  .logo h1 a {
+    font-family: 'Inter Tight';
+    text-decoration: none;
+    color: black;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    gap: 24px;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .links li a {
+    font-family: 'Inter Tight';
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
   .info {
     display: flex;
@@ -6,17 +54,26 @@
     padding-top: 4%;
   }
 
+  main {
+    padding: 16px;
+    display: flex;
+    justify-content: center !important;
+  }
+
 #bin-image{
     margin-left: 15px;
-
-}
-
-#bin-info{
-    width: 50vw;
 }
 
 #to-put-list , #to-not-put-list{
     list-style-type: none;
+}
+
+article{
+    padding: 16px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa-check{
@@ -27,40 +84,109 @@
     color: red;
 }
 
-
 .postcode{
-    border: 5px solid purple; 
+    border: 3px solid black; 
     padding: 10px; 
     width: 50vw;
     border-radius: 10px; 
+    background-color: #2f375b;
+    color: white !important;
+    margin-bottom: 3vh;
+}
+
+h3{
+    color: white !important;
+}
+
+.info{
+    margin-bottom: 3vh;
+}
+
+.info{
+    background-color: #2f375b;
+    border: 3px solid black; 
+    border-radius: 10px; 
+    color: white;
+    padding: 10px; 
+    width: 50vw;
 }
 
 .postcode-sub{
     display: flex; 
     justify-content: space-between;
-
 }
 
 .postcode-sub input, .postcode-sub button{
    padding: 10px;
 }
 
+.postcode-sub button{
+    padding: 10px;
+    background-color: #fec240;
+    border: 3px solid black; 
+    border-radius: 10px; 
+ }
 
+ #backBtn{
+    padding: 5px;
+    background-color: #fec240;
+    border: 3px solid black; 
+    border-radius: 10px; 
+ }
 
+ #backBtn a{
+    text-decoration: none;
+ }
+
+ .bin-input{
+    border: 3px solid black; 
+    padding: 10px; 
+    width: 50vw;
+    border-radius: 10px; 
+    background-color: #2f375b;
+    color: white !important;
+    margin-bottom: 3vh;
+ }
+
+#searchBy{
+    color: #DE4B43; 
+}
 
 #extra-info{
-    background-color: gainsboro; 
-    padding: 10px;
-    padding-bottom:30px; 
+    border: 3px solid black; 
+    padding: 10px; 
     width: 50vw;
+    border-radius: 10px; 
+    background-color: #2f375b;
+    color: white !important;
+    margin-bottom: 3vh;
 }
 
 #extra-info a{
     text-decoration: none; 
-    color: blue; 
+    color: #DE4B43; 
 }
 
 #extra-info a:hover{
     text-decoration: underline;
-    color: #216477; 
+    color: #DE4B43; 
+}
+
+.blueSection:hover{
+    cursor: pointer;
+    transform: translate(-3px, -3px);
+    border-color: #de4b43;
+    transition: transform 0.2s;
+}
+
+.postcode-sub button:hover{
+    cursor: pointer;
+    border-color: #de4b43;
+}
+
+#backBtn:hover{
+    cursor: pointer;
+    transform: translate(-3px, -3px);
+    border-color: #de4b43;
+    transition: transform 0.2s;
 }
