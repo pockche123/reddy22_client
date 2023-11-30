@@ -104,3 +104,9 @@ input[type='submit']:hover,
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
+
+footer{
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+}
