@@ -48,9 +48,3 @@ input[type='submit']:hover {
   cursor: pointer;
   border-color: #de4b43;
 }
-
-footer{
-  position: fixed;
-  bottom: 5px;
-  left: 5px;
-}
