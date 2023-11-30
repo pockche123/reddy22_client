@@ -25,8 +25,6 @@ document
     );
     const data = await response.json();
 
-    console.log(data);
-
     if (response.status === 201) {
       window.location.assign('login.html');
     } else {
