@@ -14,6 +14,13 @@ nextButton.addEventListener('click', () => {
   getRandQuestion()
 });
 
+const nextButton = document.getElementById('next-btn')
+
+nextButton.addEventListener('click', () => {
+  console.log("nextButton clicked")
+  getRandQuestion()
+});
+
 
 const recycleImg = document.getElementById('image');
 const body = document.getElementById('body');
@@ -53,8 +60,45 @@ function restartGame() {
   count = 0;
   points = 0;
 }
+const score = document.getElementById('score')
+
+
+let count = parseInt(localStorage.getItem("count")) || 0;
+let points = parseInt(localStorage.getItem("points")) || 0;
+score.textContent = points
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  getRandQuestion()
+})
+
+
+
+document.getElementById('replay').addEventListener('click', restartGame);
+
+function restartGame() {
+  localStorage.removeItem("points")
+  localStorage.removeItem("count")
+  location.reload()
+  // Your restartGame logic here
+  console.log('restartGame function triggered');
+  document.getElementById('end').style.display = "none";
+  document.getElementById('game').style.display = "block";
+
+  count = 0;
+  points = 0;
+}
 
 function getRandQuestion() {
+  const buttons = [button1, button2, button3, button4];
+
+  buttons.forEach(button => {
+    button.classList.remove('correct', 'wrong');
+    button.disabled = false;
+  });
+
+  nextButton.disabled = true;
   const buttons = [button1, button2, button3, button4];
 
   buttons.forEach(button => {
@@ -115,6 +159,52 @@ function addImageToButton(bins) {
   button4.bin = shuffled[3].bin_id;
 }
 
+async function fetchBins() {
+
+  const response = await fetch('https://reddy-2-2-be.onrender.com/bins')
+  const bins = await response.json()
+  addImageToButton(bins)
+
+}
+
+const backButton = document.querySelectorAll('.back-btn.btn');
+
+backButton.forEach(button => {
+  button.addEventListener('click', () => {
+    localStorage.clear();
+    location.href = 'recycleHome.html';
+  });
+});
+
+
+function addImageToButton(bins) {
+
+  const buttons = [button1, button2, button3, button4];
+  buttons.forEach(button => button.innerHTML = "")
+
+
+  shuffled = bins.sort(() => Math.random() - 0.5);
+  const binImage1 = document.createElement('img');
+  const binImage2 = document.createElement('img');
+  const binImage3 = document.createElement('img');
+  const binImage4 = document.createElement('img');
+
+  binImage1.src = shuffled[0].bin_image;
+  binImage2.src = shuffled[1].bin_image;
+  binImage3.src = shuffled[2].bin_image;
+  binImage4.src = shuffled[3].bin_image;
+
+  button1.appendChild(binImage1)
+  button2.appendChild(binImage2)
+  button3.appendChild(binImage3)
+  button4.appendChild(binImage4)
+
+  button1.bin = shuffled[0].bin_id;
+  button2.bin = shuffled[1].bin_id;
+  button3.bin = shuffled[2].bin_id;
+  button4.bin = shuffled[3].bin_id;
+}
+
 function fetchInfo(data) {
   recycleImg.src = data.material_image;
   bin_id = data.bin_id;
@@ -122,10 +212,20 @@ function fetchInfo(data) {
   ItemName.textContent = name;
 
   fetchBins()
+  ItemName.textContent = name;
+
+  fetchBins()
 
   buttons.forEach((button) => {
     button.addEventListener('click', checkAnswer);
   });
+
+  if (count >= 5) {
+    endGame()
+  }
+
+}
+
 
   if (count >= 5) {
     endGame()
@@ -145,8 +245,17 @@ function checkAnswer() {
 
 
   console.log("bin: ", this.bin, ": ", "bin_id: ", bin_id)
+
+  nextButton.disabled = false;
+
+
+  console.log("bin: ", this.bin, ": ", "bin_id: ", bin_id)
   if (this.bin === bin_id) {
     this.classList.add('correct');
+    points++;
+    localStorage.setItem("points", points)
+
+    score.textContent = localStorage.getItem('points')
     points++;
     localStorage.setItem("points", points)
 

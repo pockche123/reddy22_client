@@ -141,3 +141,22 @@ div h3 {
 #box{
   width: 40vw;
 }
+
+.col{
+  /* width: 30vw; */
+  margin: 2%;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  font-family: 'Nova Square', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#goToGame {
+  margin-top: 20px; /* Adjust as needed */
+  background-image: linear-gradient(to right, rgb(245, 30, 30), white);
+  height: 10vh;
+  
+}
