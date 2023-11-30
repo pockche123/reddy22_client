@@ -1,3 +1,9 @@
+body {
+  background-image: linear-gradient(white);
+  padding: 0;
+  margin: 0;
+}
+
 .bins-container {
   border: 1px solid green;
   background-color: green;
@@ -19,4 +25,48 @@
   cursor: pointer;
   box-shadow: 0 3px 10px white;
   border: 1px solid white;
+}
+
+nav {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: #98c4d1;
+  padding: 48px 16px 0 16px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  margin-bottom: auto;
+  display: flex;
+  align-items: baseline;
+  gap: 23px;
+}
+
+.logo h1 {
+  font-weight: bold;
+}
+
+.logo h1 a {
+  font-family: 'Inter Tight';
+  text-decoration: none;
+  color: black;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+  gap: 24px;
+  margin: 0;
+  list-style: none;
+}
+
+.links li a {
+  font-family: 'Inter Tight';
+  font-weight: bold;
+  font-size: large;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
