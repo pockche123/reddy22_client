@@ -198,3 +198,21 @@ h2{
 .form-container .submit {
   background-color: #2f375b;
 }
+
+#backBtn2{
+  background-color: #fec240;
+  border: 3px solid black; 
+  border-radius: 15px; 
+  width: 7vw;
+  font-size: small;
+  margin-bottom: 5px;
+}
+#backBtn2 a{
+  text-decoration: none;
+}
+#backBtn:hover{
+  cursor: pointer;
+  transform: translate(-3px, -3px);
+  border-color: #de4b43;
+  transition: transform 0.2s;
+}
