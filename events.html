@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" />
+    <link rel="stylesheet" href="./static/css/default.css" />
+    <link rel="stylesheet" href="./static/css/board.css" />
+    <script src="./static/js/events.js" defer></script>
+    <title>Posts Page</title>
+  </head>
+  <body>
+    <main>
+      <button class="btn-secondary" id="logout">
+        <svg
+          fill="none"
+          height="24"
+          shape-rendering="geometricPrecision"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          width="24"
+          style="color: var(--geist-foreground); width: 18px; height: 18px"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 8l-4 4 4 4" />
+          <path d="M16 12H8" />
+        </svg>
+        Log out
+      </button>
+      <div class="header">
+        <h1>Events</h1>
+        <button class="btn-primary" id="create-btn">Create</button>
+      </div>
+      <div id="posts"></div>
+
+      <div class="form-container_parent" id="modal">
+        <div class="form-container">
+          <h3>Create a post</h3>
+          <form id="post-form">
+            <fieldset>
+              <label for="title">Title</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                required
+                placeholder="An amazing title"
+              />
+            </fieldset>
+            <fieldset>
+              <label for="title">Content</label>
+              <textarea
+                id="content"
+                name="content"
+                required
+                placeholder="Some thrilling content"
+              ></textarea>
+            </fieldset>
+            <input class="submit" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+      integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
