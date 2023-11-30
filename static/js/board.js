@@ -165,6 +165,8 @@ window.onclick = function (e) {
   if (e.target === modal) modal.style.display = 'none';
 };
 
+let links = document.getElementById('links');
+
 if (localStorage.getItem('token')) {
   for (let i = 0; i < links.children.length; i++) {
     links.children[i].style.display = 'none';
@@ -191,7 +193,10 @@ if (localStorage.getItem('token')) {
       localStorage.removeItem('token');
       window.location.assign('./index.html');
     } else {
-      alert(data.error);
+      Swal.fire({
+        icon: 'error',
+        text: data.error
+      });
     }
   });
 
