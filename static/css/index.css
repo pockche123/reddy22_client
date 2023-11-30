@@ -6,13 +6,6 @@ body {
   margin: 0;
 }
 
-/* nav{
-  background-color: #98C4D1;
-  height: 15vh;
-  margin-bottom: 7vh;
-  font-size: 30px;
-}  */
-
 nav {
   display: flex;
   flex-flow: column;
