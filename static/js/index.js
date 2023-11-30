@@ -39,7 +39,10 @@ if (!localStorage.getItem('token')) {
       localStorage.removeItem('token');
       window.location.assign('./index.html');
     } else {
-      alert(data.error);
+      Swal.fire({
+        icon: 'error',
+        text: data.error
+      });
     }
   });
 
