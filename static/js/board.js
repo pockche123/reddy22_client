@@ -56,7 +56,10 @@ const createPostElement = (data) => {
       window.location.reload();
     } else {
       const respData = await response.json();
-      alert(respData.error);
+      Swal.fire({
+        icon: 'error',
+        text: respData.error
+      });
     }
   });
 
@@ -103,7 +106,10 @@ document.getElementById('post-form').addEventListener('submit', async (e) => {
   if (response.status === 201) {
     window.location.reload();
   } else {
-    alert(data.error);
+    Swal.fire({
+      icon: 'error',
+      text: data.error
+    });
   }
 });
 
@@ -132,27 +138,6 @@ const loadPosts = async () => {
   }
 };
 
-document.getElementById('logout').addEventListener('click', async () => {
-  const options = {
-    headers: {
-      Authorization: localStorage.getItem('token')
-    }
-  };
-
-  const response = await fetch(
-    'https://reddy-2-2-be.onrender.com/users/logout',
-    options
-  );
-  const data = await response.json();
-
-  if (response.status == 200) {
-    localStorage.removeItem('token');
-    window.location.assign('./index.html');
-  } else {
-    alert(data.error);
-  }
-});
-
 async function fetchUsername(user_id) {
   const response = await fetch(
     `https://reddy-2-2-be.onrender.com/users/${user_id}`
@@ -163,7 +148,10 @@ async function fetchUsername(user_id) {
   if (response.status === 200) {
     return data['username'];
   } else {
-    alert(data.error);
+    Swal.fire({
+      icon: 'error',
+      text: data.error
+    });
   }
 }
 
@@ -176,5 +164,38 @@ document
 window.onclick = function (e) {
   if (e.target === modal) modal.style.display = 'none';
 };
+
+if (localStorage.getItem('token')) {
+  for (let i = 0; i < links.children.length; i++) {
+    links.children[i].style.display = 'none';
+  }
+  const listElem = document.createElement('li');
+  links.appendChild(listElem);
+  const link = document.createElement('a');
+  link.textContent = 'Logout';
+
+  link.addEventListener('click', async () => {
+    const options = {
+      headers: {
+        Authorization: localStorage.getItem('token')
+      }
+    };
+
+    const response = await fetch(
+      'https://reddy-2-2-be.onrender.com/users/logout',
+      options
+    );
+    const data = await response.json();
+
+    if (response.status == 200) {
+      localStorage.removeItem('token');
+      window.location.assign('./index.html');
+    } else {
+      alert(data.error);
+    }
+  });
+
+  listElem.appendChild(link);
+}
 
 loadPosts();
