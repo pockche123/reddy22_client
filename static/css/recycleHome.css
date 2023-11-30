@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
 body {
   background-image:  white;
-  display: flex;
-  text-align: center;
-  min-height: 100vh;
   padding: 0;
   margin: 0;
 }
@@ -53,20 +51,14 @@ nav {
   max-height:50px;
 }
 main {
-  margin: 0;
-  padding: 0;
+  padding: 16px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  justify-content: center !important;
+  height: 100%;
 }
-.container.header {
-  max-width: 700px; /* Set the maximum width of the container to your desired size */
-  width: 100%; /* Ensure it takes the full width of its parent */
-  text-align: center;
-}
+
 .container {
-  /* width: 100%; */
+  width: 60vw;
   padding: 20px;
   background-color: white;
   box-sizing: border-box;
@@ -77,16 +69,14 @@ main {
   background-color: #2F375B;
   grid-template-columns: auto auto;
   display: grid;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   box-sizing: border-box;
   margin: 2%;
   border: 5px solid rgb(0, 0, 0);
   border-radius: 15px;
   font-family: 'Nova Square', sans-serif;
-  /* display: flex; */
   justify-content: center;
-  /* align-items: center; */
   transition: transform 0.2s;
 }
 .bin-card {
@@ -138,6 +128,9 @@ div h3 {
   color: black;
   font-size: 2.5em;
 }
-#box{
-  width: 40vw;
+
+footer{
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
 }
