@@ -1,79 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="./static/js/recycling.js"></script>
-    <link rel="stylesheet" href="./static/css/recycling.css" />
-    <link
-      rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <title>Recycle</title>
-  </head>
-  <body class="recycling">
-    <div class="container rec">
-      <section id="game">
-        <div id="question-container">
-          <div class="scores">
-            <label>Score: <label id="score">0</label></label>
-          </div>
-          <div id="question">
-            Choose the correct recycling bin for this item:
-          </div>
-          <h2 id="itemName">Hello</h2>
 
-          <div id="imageDiv">
-            <img src="#" alt="Recycle-img" id="image" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="./static/js/recycling.js"></script>
+  <link rel="stylesheet" href="./static/css/recycling.css" />
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <title>Recycle</title>
+</head>
 
-          <div id="answer-buttons" class="btn-grid">
-            <button class="btn answer" id="btn1"></button>
-            <button class="btn answer" id="btn2"></button>
-            <button class="btn answer" id="btn3"></button>
-            <button class="btn answer" id="btn4"></button>
-          </div>
+<body class="recycling">
+  <div class="container rec">
+    <section id="game">
+      <div id="question-container">
+        <div class="scores">
+          <label>Score: <label id="score">0</label></label>
+        </div>
+        <div id="question">
+          Choose the correct recycling bin for this item:
+        </div>
+        <h2 id="itemName">Hello</h2>
+
+        <div id="imageDiv">
+          <img src="#" alt="Recycle-img" id="image" />
         </div>
 
-        <div class="controls">
-          <button class="back-btn btn">Go back</button>
-
-          <!-- <button
-            id="create-score"
-            class="next-btn btn hide submit"
-            value="Create"
-          >
-            Next
-          </button> -->
-
-          <button id="next-btn" class="next-btn btn">
-            Next
-          </button>
-          <!-- <button id="next-btn-incorrect" class="next-btn btn hide">
-            Next
-          </button> -->
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn answer" id="btn1"></button>
+          <button class="btn answer" id="btn2"></button>
+          <button class="btn answer" id="btn3"></button>
+          <button class="btn answer" id="btn4"></button>
         </div>
-      </section>
-      <section id="end">
-        <h2>You have scored <label id="totalScore"></label>%</h2>
+      </div>
+
+      <div class="controls">
+        <button class="back-btn btn">Go back</button>
+
+        <button id="next-btn" class="next-btn btn">
+          Next
+        </button>
+      </div>
+    </section>
+    <section id="end">
+      <h2>You have scored <label id="totalScore"></label>%</h2>
+      <div>
         <div>
-          <div>
           <label id="message"></label>
-          </div>
-    
-
-           <button class="btn" id="replay">
-            <i class="material-icons">replay</i>
-            Play Again
-          </button>
-          <button class="back-btn btn">Go back</button>
-
         </div>
-      </section>
-    </div>
-  </body>
+
+
+        <button class="btn" id="replay">
+          <i class="material-icons">replay</i>
+          Play Again
+        </button>
+        <button class="back-btn btn">Go back</button>
+
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
