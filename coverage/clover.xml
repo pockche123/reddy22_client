@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1701347498682" clover="3.2.0">
-  <project timestamp="1701347498682" name="All files">
+<coverage generated="1701347601595" clover="3.2.0">
+  <project timestamp="1701347601596" name="All files">
     <metrics statements="193" coveredstatements="143" conditionals="49" coveredconditionals="32" methods="44" coveredmethods="32" elements="286" coveredelements="207" complexity="0" loc="193" ncloc="193" packages="1" files="3" classes="3"/>
     <file name="bin.js" path="C:\Users\bayin\Documents\LFA\group projects\reddy_22\reddy22_client\static\js\bin.js">
       <metrics statements="44" coveredstatements="36" conditionals="0" coveredconditionals="0" methods="19" coveredmethods="16"/>
@@ -51,30 +51,30 @@
     </file>
     <file name="recycleHome.js" path="C:\Users\bayin\Documents\LFA\group projects\reddy_22\reddy22_client\static\js\recycleHome.js">
       <metrics statements="24" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+      <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="11" count="2" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
       <line num="15" count="2" type="stmt"/>
-      <line num="16" count="2" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
       <line num="18" count="2" type="stmt"/>
       <line num="19" count="2" type="stmt"/>
-      <line num="20" count="2" type="stmt"/>
+      <line num="21" count="2" type="stmt"/>
       <line num="22" count="2" type="stmt"/>
       <line num="23" count="2" type="stmt"/>
-      <line num="24" count="2" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
       <line num="26" count="2" type="stmt"/>
       <line num="27" count="2" type="stmt"/>
       <line num="28" count="2" type="stmt"/>
-      <line num="29" count="2" type="stmt"/>
-      <line num="31" count="2" type="stmt"/>
-      <line num="33" count="2" type="stmt"/>
+      <line num="30" count="2" type="stmt"/>
+      <line num="32" count="2" type="stmt"/>
+      <line num="34" count="2" type="stmt"/>
       <line num="35" count="2" type="stmt"/>
       <line num="36" count="2" type="stmt"/>
-      <line num="37" count="2" type="stmt"/>
-      <line num="41" count="0" type="stmt"/>
-      <line num="47" count="1" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
     </file>
     <file name="recycling.js" path="C:\Users\bayin\Documents\LFA\group projects\reddy_22\reddy22_client\static\js\recycling.js">
       <metrics statements="125" coveredstatements="84" conditionals="49" coveredconditionals="32" methods="19" coveredmethods="12"/>
@@ -132,7 +132,7 @@
       <line num="93" count="0" type="stmt"/>
       <line num="94" count="0" type="stmt"/>
       <line num="101" count="1" type="stmt"/>
-      <line num="103" count="3" type="stmt"/>
+      <line num="103" count="5" type="stmt"/>
       <line num="105" count="1" type="stmt"/>
       <line num="106" count="4" type="cond" truecount="1" falsecount="1"/>
       <line num="107" count="0" type="stmt"/>

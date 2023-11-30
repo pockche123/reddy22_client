@@ -90,7 +90,8 @@ const backButton = document.querySelectorAll('.back-btn.btn')
 
 backButton.forEach(button => {
   button.addEventListener('click', () => {
-    localStorage.clear()
+  localStorage.removeItem('points')
+  localStorage.removeItem('count')
     location.href = 'recycleHome.html'
   })
 })
