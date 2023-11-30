@@ -118,6 +118,9 @@ footer {
 }
 
 footer p {
+  color: black;
+  font-family: 'Inter Tight';
+  font-size: large;
   font-weight: bold;
   margin: 0;
   padding: 8px;
