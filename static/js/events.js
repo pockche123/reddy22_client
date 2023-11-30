@@ -96,7 +96,7 @@ document.getElementById('post-form').addEventListener('submit', async (e) => {
   };
 
   const response = await fetch(
-    'https://reddy-2-2-be.onrender.com/posts',
+    'https://reddy-2-2-be.onrender.com/posts/community',
     options
   );
   const data = await response.json();
