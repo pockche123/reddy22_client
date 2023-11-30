@@ -24,8 +24,8 @@ img {
 }
 
 #Img1 {
-  max-width:30px;
-  max-height:30px;
+  max-width: 30px;
+  max-height: 30px;
 }
 
 body {
@@ -116,55 +116,52 @@ h2 {
   font-weight: bold;
 }
 
-
-#game{
-  display: block
+#game {
+  display: block;
 }
 
-#end{
-  display: none; 
+#end {
+  display: none;
   min-width: 100%;
-  min-height: 50vh; 
+  min-height: 50vh;
 }
 
-button{
+button {
   transition: transform 0.3s ease;
   background-color: white;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
   background-color: #fec240;
 }
 
-
-#message,  .scores {
+#message,
+.scores {
   display: flex;
   text-align: center;
   justify-content: center;
-  font-size: 30px; 
+  font-size: 30px;
   font-weight: bolder;
-
 }
 
-
-#image{
+#image {
   border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height:  200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.15),
+    0 0 30px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 200px;
 }
 
-#buttonBox{
+#buttonBox {
   display: flex;
   text-align: center;
   justify-content: center;
   margin: 10vh;
-  
 }
 
-#messageEnd{
+#messageEnd {
   display: flex;
   margin: 10vh;
   text-align: center;
@@ -173,32 +170,32 @@ button:hover{
   color: white;
 }
 
-#btnSize{
+#btnSize {
   margin: 30px;
   font-size: 30px;
   font-weight: bold;
 }
 
-#itemName{
+#itemName {
   color: white;
 }
 
-#replay{
+#replay {
   margin: 30px;
   font-size: 30px;
   font-weight: bold;
 }
 
-.answer{
+.answer {
   border: 3px solid rgb(0, 0, 0);
 }
 
-.back-btn{
+.back-btn {
   background-color: #fec240;
   border: 3px solid rgb(0, 0, 0);
 }
 
-.next-btn{
+.next-btn {
   background-color: #fec240;
   border: 3px solid rgb(0, 0, 0);
 }
@@ -208,7 +205,7 @@ button:hover{
   border-color: #de4b43;
 }
 
-#replay{
+#replay {
   background-color: #fec240;
   border: 3px solid rgb(0, 0, 0);
 }
@@ -216,10 +213,4 @@ button:hover{
 #replay:hover {
   cursor: pointer;
   border-color: #de4b43;
-}
-
-footer{
-  position: fixed;
-  bottom: 5px;
-  left: 5px;
 }

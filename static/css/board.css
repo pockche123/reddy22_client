@@ -48,7 +48,6 @@ nav {
   cursor: pointer;
 }
 
-
 main {
   padding: 16px;
 }
@@ -151,26 +150,26 @@ input[type='submit']:hover {
   margin: auto;
 }
 
-.btn-secondary{
-  background-color: #fec240 ;
+.btn-secondary {
+  background-color: #fec240;
   border: 3px solid rgb(0, 0, 0);
 }
 
-.btn-primary{
+.btn-primary {
   background-color: #98c4d1;
   color: black;
   border: 3px solid rgb(0, 0, 0);
 }
 
-#delete{
+#delete {
   background-color: #de4b43;
 }
 
-h2{
+h2 {
   color: white;
 }
 
-.container{
+.container {
   background-color: #2f375b;
   color: white;
   border: 3px solid rgb(0, 0, 0);
@@ -181,46 +180,46 @@ h2{
   border-color: #de4b43;
 }
 
-.form-container{
-  background-color:#98c4d1 ;
+.form-container {
+  background-color: #98c4d1;
 }
 
 .form-container .submit {
   background-color: #2f375b;
 }
 
-#backBtn2{
+#backBtn2 {
   background-color: #fec240;
-  border: 3px solid black; 
-  border-radius: 15px; 
-  width: 7vw;
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 88px;
   font-size: small;
   margin-bottom: 5px;
 }
-#backBtn2 a{
+#backBtn2 a {
   text-decoration: none;
 }
-#backBtn2:hover{
+#backBtn2:hover {
   cursor: pointer;
   transform: translate(-3px, -3px);
   border-color: #de4b43;
   transition: transform 0.2s;
 }
 
-#backBtn2 h1{
+#backBtn2 h1 {
   margin: 0;
 }
 
 .btn-secondary:hover {
   transform: scale(1.03);
   cursor: pointer;
-  box-shadow: 0 3px 10px #2F375B;
+  box-shadow: 0 3px 10px #2f375b;
   border: 3px solid #de4b43;
 }
 
 .btn-primary:hover {
   transform: scale(1.03);
   cursor: pointer;
-  box-shadow: 0 3px 10px #2F375B;
+  box-shadow: 0 3px 10px #2f375b;
   border: 3px solid #de4b43;
 }
