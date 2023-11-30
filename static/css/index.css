@@ -143,9 +143,3 @@ main {
 .hide-item {
   display: none;
 }
-
-footer{
-  position: fixed;
-  bottom: 5px;
-  left: 5px;
-}

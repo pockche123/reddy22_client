@@ -25,6 +25,9 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
     localStorage.setItem('token', data.token);
     window.location.assign('index.html');
   } else {
-    alert(data.error);
+    Swal.fire({
+      icon: 'error',
+      text: data.error
+    });
   }
 });
