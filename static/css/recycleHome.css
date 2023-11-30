@@ -80,9 +80,7 @@ main {
   transition: transform 0.2s;
 }
 .bin-card {
-  /* border: 1px solid black; */
   background-color: white;
-  padding: 10px;
   margin-top: 20px;
   margin-left: 20px;
   border: 5px solid white;
@@ -94,7 +92,7 @@ main {
   transform: scale(1.03);
   cursor: pointer;
   box-shadow: 0 3px 10px #2F375B;
-  border: 3px solid red;
+  border: 3px solid #de4b43;
 }
 .col{
   width: 30vw;
@@ -117,7 +115,7 @@ main {
   transform: scale(1.03);
   cursor: pointer;
   box-shadow: 0 3px 10px #2F375B;
-  border: 3px solid red;
+  border: 3px solid #de4b43;
 }
 #goToGame a{
   text-decoration: none;
@@ -133,4 +131,31 @@ footer{
   position: fixed;
   bottom: 5px;
   left: 5px;
+}
+
+#backBtn{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.backBtn h1{
+  background-color: #fec240;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  width: 12vw;
+}
+
+#backBtn a{
+  text-decoration: none;
+}
+
+#backBtn h1:hover{
+  transform: scale(1.03);
+  cursor: pointer;
+  box-shadow: 0 3px 10px #2F375B;
+  border: 3px solid #de4b43;
 }
