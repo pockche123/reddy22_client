@@ -207,6 +207,10 @@ h2{
   transition: transform 0.2s;
 }
 
+#backBtn2 h1{
+  margin: 0;
+}
+
 .btn-secondary:hover {
   transform: scale(1.03);
   cursor: pointer;
