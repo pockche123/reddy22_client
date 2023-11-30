@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
-  background-image:  white;
+  background-image: white;
   padding: 0;
   margin: 0;
 }
@@ -9,7 +9,7 @@ nav {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  background-color: #98C4D1;
+  background-color: #98c4d1;
   padding: 48px 16px 0 16px;
   margin-bottom: 24px;
 }
@@ -47,8 +47,8 @@ nav {
   font-size: 50px;
 }
 #logoImg {
-  max-width:50px;
-  max-height:50px;
+  max-width: 50px;
+  max-height: 50px;
 }
 main {
   padding: 16px;
@@ -65,8 +65,8 @@ main {
   margin: 0 auto;
 }
 .bins-container {
-  border: 1px solid #2F375B;
-  background-color: #2F375B;
+  border: 1px solid #2f375b;
+  background-color: #2f375b;
   grid-template-columns: auto auto;
   display: grid;
   padding: 20px;
@@ -91,10 +91,10 @@ main {
 .bin-card:hover {
   transform: scale(1.03);
   cursor: pointer;
-  box-shadow: 0 3px 10px #2F375B;
+  box-shadow: 0 3px 10px #2f375b;
   border: 3px solid #de4b43;
 }
-.col{
+.col {
   width: 30vw;
   margin: 2%;
   border: 5px solid rgb(0, 0, 0);
@@ -103,21 +103,21 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FEC240;
+  background-color: #fec240;
   height: 10vh;
 }
 #goToGame {
   margin-top: 20px; /* Adjust as needed */
-  background-color: #FEC240;
+  background-color: #fec240;
   height: 10vh;
 }
 #goToGame:hover {
   transform: scale(1.03);
   cursor: pointer;
-  box-shadow: 0 3px 10px #2F375B;
+  box-shadow: 0 3px 10px #2f375b;
   border: 3px solid #de4b43;
 }
-#goToGame a{
+#goToGame a {
   text-decoration: none;
   color: black;
 }
@@ -127,20 +127,15 @@ div h3 {
   font-size: 2.5em;
 }
 
-footer{
-  position: fixed;
-  bottom: 5px;
-  left: 5px;
-}
-
-#backBtn{
+#backBtn {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
-.backBtn h1{
+.backBtn h1 {
   background-color: #fec240;
   border: 3px solid rgb(0, 0, 0);
   border-radius: 15px;
@@ -149,13 +144,22 @@ footer{
   width: 12vw;
 }
 
-#backBtn a{
+#backBtn a {
   text-decoration: none;
 }
 
-#backBtn h1:hover{
+#backBtn h1:hover {
   transform: scale(1.03);
   cursor: pointer;
-  box-shadow: 0 3px 10px #2F375B;
+  box-shadow: 0 3px 10px #2f375b;
   border: 3px solid #de4b43;
+}
+
+div h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+#backBtn a h1 {
+  font-weight: bold;
 }
