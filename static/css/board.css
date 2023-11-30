@@ -162,16 +162,6 @@ input[type='submit']:hover {
   border: 3px solid rgb(0, 0, 0);
 }
 
-.btn-secondary:hover {
-  cursor: pointer;
-  border-color: #de4b43;
-}
-
-.btn-primary:hover {
-  cursor: pointer;
-  border-color: #de4b43;
-}
-
 #delete{
   background-color: #de4b43;
 }
@@ -210,9 +200,23 @@ h2{
 #backBtn2 a{
   text-decoration: none;
 }
-#backBtn:hover{
+#backBtn2:hover{
   cursor: pointer;
   transform: translate(-3px, -3px);
   border-color: #de4b43;
   transition: transform 0.2s;
+}
+
+.btn-secondary:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  box-shadow: 0 3px 10px #2F375B;
+  border: 3px solid #de4b43;
+}
+
+.btn-primary:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  box-shadow: 0 3px 10px #2F375B;
+  border: 3px solid #de4b43;
 }
