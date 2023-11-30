@@ -7,6 +7,10 @@
     <link rel="shortcut icon" href="" />
     <link rel="stylesheet" href="./static/css/default.css" />
     <link rel="stylesheet" href="./static/css/board.css" />
+    <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <script src="./static/js/board.js" defer></script>
     <title>Posts Page</title>
   </head>
@@ -39,25 +43,33 @@
     </nav>
 
     <main>
-      <button class="btn-secondary" id="logout">
-        <svg
-          fill="none"
-          height="24"
-          shape-rendering="geometricPrecision"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1.5"
-          viewBox="0 0 24 24"
-          width="24"
-          style="color: var(--geist-foreground); width: 18px; height: 18px"
-        >
-          <circle cx="12" cy="12" r="10" />
-          <path d="M12 8l-4 4 4 4" />
-          <path d="M16 12H8" />
-        </svg>
-        Log out
-      </button>
+      <div>
+        <div id="backBtn2">
+          <a  href="./index.html">
+            <h1><span class="material-symbols-outlined">arrow_back</span> Back</h1></a>
+        </div>
+        <button class="btn-secondary" id="logout">
+          <svg
+            fill="none"
+            height="24"
+            shape-rendering="geometricPrecision"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            width="24"
+            style="color: var(--geist-foreground); width: 18px; height: 18px"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 8l-4 4 4 4" />
+            <path d="M16 12H8" />
+          </svg>
+          Log out
+       </button>
+      </div>
+
+
       <div class="header">
         <h1>Posts</h1>
         <button class="btn-primary" id="create-btn">Create</button>
